@@ -140,7 +140,7 @@ sleep(2)
 #</Intro>
 
 #<login>
-file = open("Code/Players.txt", "r") #  \
+file = open("Players.txt", "r") #  \
 data = file.read() #               |-- Fetches user data from external file
 file.close() #                     /
 data = data.split("\n")
@@ -198,7 +198,7 @@ else: #If neither score is greater, hence they tie...
 #</aftermath>
 
 #<report>
-file = open("Code/Winners.txt", "r") #Fetches the winners' data from the external file
+file = open("Winners.txt", "r") #Fetches the winners' data from the external file
 data = file.read()
 file.close()
 data = data.split("\n")
@@ -235,7 +235,7 @@ while changed == True:
 print("\nTop five leaderboard:")
 for i in range(5):
     print(wins[i*2] + ", " + wins[i*2+1])
-file = open("Code/Winners.txt", "w")
+file = open("Winners.txt", "w")
 file.write(wins[0] + "," + wins[1])
 for i in range(int(len(wins)/2)-1):
     file.write("\n" + wins[(i+1)*2] + "," + wins[(i+1)*2+1])
