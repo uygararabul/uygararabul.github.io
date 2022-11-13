@@ -20,7 +20,7 @@
 <body>
 <canvas width="400" height="400" id="game"></canvas>
 <script>
-document.body.style.zoom = "70%"
+document.body.style.zoom = "200%"
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
 
@@ -57,7 +57,7 @@ function loop() {
   requestAnimationFrame(loop);
 
   // slow game loop to 15 fps instead of 60 (60/15 = 4)
-  if (++count < 4) {
+  if (++count < 6) {
     return;
   }
 
