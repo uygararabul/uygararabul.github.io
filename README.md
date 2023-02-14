@@ -1,2 +1,0 @@
-# uygararabul.github.io
-nomnomnom
